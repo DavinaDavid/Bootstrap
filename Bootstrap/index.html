@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <title>Bootstrap Demo</title>
+    <style>
+      
+     #MenuDv{
+        background-color: black;
+        width: 100%;
+        color: bisque;
+     }   
+    #MenuDv li{
+        list-style: none;
+        font-weight: bold;
+        font-size:small;
+        padding: 20px 0px 10px 20px;
+        float:left;
+    }
+    
+    .img-responsive{
+        height:300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="MenuDv" class="container">
+        <ol>
+            <li><a href="#homeFrm">Home</a></li>
+            <li><a href="#AboutFrm">About</a></li>
+            <li><a href="#ContactFrm">Contact</a></li>
+            <li><a href="#NewsFrm">News</a></li>
+        </ol>
+    </div>
+    <div id="homeFrm" class="container-fluid" style='background-color:lightgreen; height:200px;'>
+        <h3>BOOTSTRAP</h3>
+        <p>This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.This is some text.</p>
+    </div>
+    <div id="NewsFrm" class="container-fluid">
+                <h3 style='text-align:center;'>NEWS</h3>
+    <div class="row" >
+            <div class="col-sm-4" style='background-color:lightslategrey; height:400px;'>Left Div
+            <img class="img-responsive img-rounded" src=".\bridge_2230346b.jpg"></img></div>
+            <div class="col-sm-4" style='background-color:mediumseagreen; height:400px;'>Center Div
+                    <img class="img-responsive img-rounded" src=".\Ggb_by_night.jpg"></img></div>
+                
+            <div class="col-sm-4" style='background-color:lightslategrey; height:400px;'>Right Div
+                    <img class="img-responsive img-rounded" src=".\bridge_2230346b.jpg"></img>
+            </div>
+          </div>
+    </div>
+          <div class="table-responsive" id="AboutFrm">
+        <h3 style='text-align: center;'> About Members</h3>
+                <table class="table table-hover" style='background-color:gainsboro;'>
+                    <thead>
+                        <tr>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                  </tr>
+                  <tr>
+                        <td>Sara</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                            <td>Davina</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                          </tr>
+                            <tr>
+                                <td>Davie</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                              </tr>
+                              <tr>
+                                    <td>dd</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  <div  class="container-fluid"> 
+                      <h3 style='text-align:center;'>Contact Form</h3>
+                      <form id="ContactFrm">
+                          <div class="form-group">
+                              <label name='lbl'>Email</label>
+                              <input name='lblfield' type='email' class='form-control'>
+                          </div>
+                          <div class="form-group">
+                                <label name='pass'>Password</label>
+                                <input name='passfield' type='password' class='form-control'>
+                            </div>
+                               <div class="form-group">
+                                <label name='DOB'>Date Of Birth</label>
+                                <input name='dobfield' type='date' class='form-control'>
+                            </div>
+                            <div class="form-group">
+                                    <label name='phone'>Phone No</label>
+                                    <input name='phonefield' type='tel' pattern="[0-9]{4}-[0-9]{7}" class='form-control' required>
+                                </div>
+                                <div class="checkbox">
+                                        <label><input type="checkbox"> Remember me</label>
+                                      </div>
+                                      
+                             <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+                  </div>
+</body>
+</html>
